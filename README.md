@@ -73,7 +73,11 @@ Additionally, you need to set up Gmail for sending notifications:
    - **`phone_number`**: Your phone number for text notifications.
    - **`gmail`**: Your Gmail address used for sending notifications.
    - **`gmail_key`**: Your Gmail API key or app password (use the password or app password configured as per the Gmail setup instructions).
-   - **`carrier`**: Your phone carrier (e.g., `att`, `verizon`).
+   - **`carrier`**: Your phone carrier. Available options are:
+     - `att`
+     - `tmobile`
+     - `verizon`
+     - `sprint`
    - **`rest_time`**: Time (in seconds) between availability checks.
 
    Under the `[Classes]` section, list the classes you are monitoring. You can add more classes as needed:
@@ -95,20 +99,9 @@ This will start the program and it will continuously check for class availabilit
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GLPv3 License - see https://www.gnu.org/licenses/gpl-3.0.en.html
 
-## Acknowledgements
-
-- Thanks to [Twilio](https://www.twilio.com/) for providing the SMS API.
-- Inspiration from other TAMU class availability tools.
-
-## Contact
-
-For any questions or issues, please contact:
-
-- **Email:** your.email@example.com
-- **GitHub Issues:** [Issues](https://github.com/yourusername/tamu-class-availability-checker/issues)
 
 ---
 
-Note: Code is subject to breaking if TAMU changes how they display their classes.
+Note: This code is subject to breaking if TAMU changes how class availability is delivered or displayed.
