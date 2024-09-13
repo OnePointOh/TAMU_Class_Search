@@ -29,8 +29,8 @@ Additionally, you need to set up Gmail for sending notifications:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/OnePointOh/TAMU_Class_Search.git
-   cd TAMU_Class_Search
+   git clone https://github.com/yourusername/tamu-class-availability-checker.git
+   cd tamu-class-availability-checker
    ```
 
 2. **Set up a virtual environment (optional but recommended):**
@@ -44,7 +44,7 @@ Additionally, you need to set up Gmail for sending notifications:
 
 1. **Set up the configuration file:**
 
-   Modify the `config.ini` file in the project directory with the following format:
+   Create a `config.ini` file in the project directory with the following format:
 
    ```ini
    [Settings]
@@ -60,14 +60,23 @@ Additionally, you need to set up Gmail for sending notifications:
    class2 = XXXXX
    ```
 
-   - **`term_in`**: The term code for which you are checking class availability (e.g., `202401` for Spring 2024).
+   - **`term_in`**: The term code for which you are checking class availability. The `term_in` code is structured as follows:
+     - **First four digits**: The year (e.g., `2024`).
+     - **Fifth digit**: The semester in which the class takes place:
+       - `1` for Spring
+       - `2` for Summer
+       - `3` for Fall
+     - **Sixth digit**: The campus where the class is offered:
+       - `1` for College Station
+       - `2` for Galveston
+
    - **`phone_number`**: Your phone number for text notifications.
    - **`gmail`**: Your Gmail address used for sending notifications.
    - **`gmail_key`**: Your Gmail API key or app password (use the password or app password configured as per the Gmail setup instructions).
    - **`carrier`**: Your phone carrier (e.g., `att`, `verizon`).
    - **`rest_time`**: Time (in seconds) between availability checks.
 
-   Under the `[Classes]` section, list the crn's for the classes you are monitoring. You can add more classes as needed. You can use any name for the classes in this config file:
+   Under the `[Classes]` section, list the classes you are monitoring. You can add more classes as needed:
 
    - **`class1`**: The code of the first class you are monitoring.
    - **`class2`**: The code of the second class you are monitoring.
@@ -102,4 +111,4 @@ For any questions or issues, please contact:
 
 ---
 
-Feel free to make any additional modifications to tailor the README to your specific needs!
+Note: Code is subject to breaking if TAMU changes how they display their classes.
