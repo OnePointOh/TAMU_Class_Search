@@ -78,7 +78,7 @@ Additionally, you need to set up Gmail for sending notifications:
      - `tmobile`
      - `verizon`
      - `sprint`
-   - **`rest_time`**: Time (in seconds) between availability checks.
+   - **`rest_time`**: Time (in seconds) between availability checks. Please do not set lower than 10 seconds, as this will cause more traffic for TAMU web services and we don't want them to prevent our checks.
 
    Under the `[Classes]` section, list the classes you are monitoring. Each class section has a unique CRN, which the code uses to check for that specific class section availability. You can add more classes as needed:
 
