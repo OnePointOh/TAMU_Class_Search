@@ -80,10 +80,10 @@ Additionally, you need to set up Gmail for sending notifications:
      - `sprint`
    - **`rest_time`**: Time (in seconds) between availability checks.
 
-   Under the `[Classes]` section, list the classes you are monitoring. You can add more classes as needed:
+   Under the `[Classes]` section, list the classes you are monitoring. Each class section has a unique CRN, which the code uses to check for that specific class section availability. You can add more classes as needed:
 
-   - **`class1`**: The code of the first class you are monitoring.
-   - **`class2`**: The code of the second class you are monitoring.
+   - **`class1`**: The CRN of the first class you are monitoring.
+   - **`class2`**: The CRN of the second class you are monitoring.
   
    Note: The class names used here do not have any effect on the code.
 
