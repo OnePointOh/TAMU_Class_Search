@@ -44,7 +44,7 @@ Additionally, you need to set up Gmail for sending notifications:
 
 1. **Set up the configuration file:**
 
-   Create a `config.ini` file in the project directory with the following format:
+   Modify the `config.ini` file in the project directory with the following format:
 
    ```ini
    [Settings]
@@ -84,6 +84,8 @@ Additionally, you need to set up Gmail for sending notifications:
 
    - **`class1`**: The code of the first class you are monitoring.
    - **`class2`**: The code of the second class you are monitoring.
+  
+   Note: The class names used here do not have any effect on the code.
 
 2. **Ensure that the necessary environment variables or configuration settings for sending emails or texts are properly set up in your environment or in the script.**
 
